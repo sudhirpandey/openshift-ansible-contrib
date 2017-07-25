@@ -3,7 +3,7 @@
 # to user
 
 openshift_major_version: 5
-openshift_vers: v3_{{ openshift_major_version }}
+openshift_vers: v1_{{ openshift_major_version }}
 openshift_ansible_branch: release-1.{{ openshift_major_version }}
 
 gcloud_region: '{{ gcloud_zone[:-2] }}'

@@ -39,6 +39,7 @@ openshift_hosted_metrics_storage_volume_size={{ openshift_hosted_metrics_storage
 openshift_hosted_metrics_storage_kind=dynamic
 openshift_master_metrics_public_url='https://metrics.{{ wildcard_zone }}/hawkular/metrics'
 openshift_master_identity_providers={{ openshift_master_identity_providers | to_json }}
+openshift_master_cert_expire_days=1825
 
 [masters]
 {% for i in groups['tag_' + prefix + '-master'] %}

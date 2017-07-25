@@ -42,7 +42,7 @@ function teardown {
 
 function static_inventory {
   pushd "${DIR}/ansible"
-  ansible-playbook -e @../config.yaml $@ playbooks/create-inventory-file.yaml
+  ansible-playbook  -e @../config.yaml $@ playbooks/create-inventory-file.yaml
   popd
 }
 
